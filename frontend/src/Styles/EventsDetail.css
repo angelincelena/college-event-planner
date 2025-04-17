@@ -1,0 +1,177 @@
+.eventdetails-wrapper {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(90, 24, 154, 0.1);
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.eventdetails-title {
+  font-size: 2.2rem;
+  color: #5a189a;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.eventdetails-info {
+  margin: 0.8rem 0;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.eventdetails-info strong {
+  color: #3c096c;
+}
+
+/* Buttons Section */
+.eventdetails-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.eventdetails-register-btn,
+.eventdetails-cancel-btn,
+.eventdetails-share-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.eventdetails-register-btn {
+  background-color: #5a189a;
+  color: #fff;
+}
+
+.eventdetails-cancel-btn {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.eventdetails-share-btn {
+  background-color: #9d4edd;
+  color: #fff;
+}
+
+.eventdetails-register-btn:hover {
+  background-color: #7b2cbf;
+}
+
+.eventdetails-cancel-btn:hover {
+  background-color: #c62828;
+}
+
+.eventdetails-share-btn:hover {
+  background-color: #7b2cbf;
+}
+
+/* Message */
+.eventdetails-message {
+  margin-top: 1rem;
+  text-align: center;
+  color: #2e8b57;
+  font-weight: 500;
+}
+
+/* Modal */
+.eventdetails-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(90, 24, 154, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.eventdetails-modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 4px 20px rgba(90, 24, 154, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+.eventdetails-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #5a189a;
+}
+
+.eventdetails-modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.eventdetails-modal-content ul li {
+  margin: 0.6rem 0;
+}
+
+.eventdetails-modal-content a,
+.eventdetails-modal-content button {
+  color: #5a189a;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.eventdetails-modal-content a:hover,
+.eventdetails-modal-content button:hover {
+  text-decoration: underline;
+}
+
+/* Loading text */
+.eventdetails-loading-text {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  color: #5a189a;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eventdetails-wrapper {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .eventdetails-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eventdetails-register-btn,
+  .eventdetails-cancel-btn,
+  .eventdetails-share-btn {
+    width: 100%;
+  }
+}

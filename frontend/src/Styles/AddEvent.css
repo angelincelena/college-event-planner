@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+.add-event {
+  padding: 2rem;
+  font-family: 'Manrope', sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.add-event h2 {
+  text-align: center;
+  color: #5a189a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(90, 24, 154, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #5a189a;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #7b2cbf;
+  box-shadow: 0 0 0 2px rgba(90, 24, 154, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #5a189a;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #7b2cbf;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-form {
+    padding: 1.5rem;
+  }
+
+  .add-event h2 {
+    font-size: 1.6rem;
+  }
+}

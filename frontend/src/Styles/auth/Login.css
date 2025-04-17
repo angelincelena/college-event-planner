@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+.elegant-login-wrapper {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #f5f0ff, #ede9fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Manrope', sans-serif;
+  padding: 1rem;
+}
+
+.elegant-login-card {
+  background-color: white;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 510px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(90, 24, 154, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.elegant-login-card h1 {
+  color: #5a189a;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.elegant-login-card p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.role-toggle {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.role-toggle button {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f3f3f3;
+  color: #5a189a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.role-toggle .active {
+  background-color: #5a189a;
+  color: white;
+  border: none;
+}
+
+.lucide-input {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.lucide-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  background: transparent;
+  color: #333;
+}
+
+.submit-btn {
+  background-color: #5a189a;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #7b2cbf;
+}
+
+.forgot-link {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+
+.forgot-link a {
+  color: #5a189a;
+  text-decoration: none;
+}
+
+.forgot-link a:hover {
+  text-decoration: underline;
+}
+
+.login-error {
+  background-color: #ffe0e0;
+  color: #b00020;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+
+.register-redirect {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.register-redirect a {
+  color: #5a189a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-redirect a:hover {
+  text-decoration: underline;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  cursor: pointer;
+}
+
+.back-arrow a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}

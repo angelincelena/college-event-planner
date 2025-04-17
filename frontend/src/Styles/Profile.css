@@ -1,0 +1,36 @@
+.organizer-profile-container {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfcff;
+  min-height: 80vh;
+}
+
+.organizer-profile-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #5a189a;
+}
+
+.organizer-profile-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+}
+
+.organizer-profile-card p {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #333;
+}
+
+.organizer-profile-card strong {
+  color: #5a189a;
+}
+
+.organizer-profile-loader,
+.organizer-profile-error {
+  font-size: 18px;
+  color: #5a189a;
+}

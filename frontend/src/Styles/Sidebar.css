@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: #5a189a;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  box-shadow: 2px 0 10px rgba(90, 24, 154, 0.08);
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.nav-links-sidebar {
+  list-style: none;
+  padding: 2rem 0 0;
+  margin: 0;
+}
+
+.nav-links-sidebar li {
+  margin-bottom: 1.2rem;
+}
+
+/* Common styling for both <Link> and Logout <div> */
+.nav-links-sidebar a,
+.nav-links-sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  color: white;;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-links-sidebar a:hover,
+.nav-links-sidebar .nav-item:hover {
+  background-color: #7b2cbf;
+  color: white;
+}
+
+
+.sidebar.collapsed a,
+.sidebar.collapsed .nav-item {
+  justify-content: center;
+  padding: 0.6rem;
+}
+
+.sidebar.collapsed a span,
+.sidebar.collapsed .nav-item span {
+  display: none;
+}
+
+.nav-links-sidebar .nav-item {
+  text-align: left;
+  color: #5a189a;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 1rem;
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .sidebar li {
+    margin-bottom: 0;
+  }
+}

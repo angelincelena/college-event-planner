@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+.home {
+  padding: 2rem;
+  font-family: 'Manrope', sans-serif;
+  background-color: #fff; /* ✅ White Background */
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* ✅ Prevent horizontal overflow */
+}
+
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #5a189a;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.searchAndFilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-bar,
+.category-filter {
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.search-bar input:focus {
+  border-color: #5a189a;
+  outline: none;
+}
+
+.category-filter {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.category-filter button {
+  padding: 0.6rem 1.2rem;
+  background-color: #e0d3f5;
+  color: #5a189a;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-filter button:hover {
+  background-color: #d1b3f9;
+}
+
+.category-filter button.active {
+  background-color: #5a189a;
+  color: white;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-list p {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.event-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(90, 24, 154, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(90, 24, 154, 0.15);
+}
+
+.event-card h3 {
+  font-size: 1.4rem;
+  color: #5a189a;
+  font-weight: 600;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.event-card .event-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7b2cbf;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.event-card .event-details span {
+  font-size: 0.9rem;
+}
